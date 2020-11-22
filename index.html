@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title> Happy marrage aniversary </title>
+
+        <style>{
+
+    margin:0px;
+
+    padding:0px;
+
+    box-sizing:border-box;
+
+}
+
+body {
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    background:#faddee;
+
+}
+
+.box {
+
+    position:relative;
+
+    width:200px;
+
+    height:200px;
+
+    transform-style:preserve-3d;
+
+    animation:animate 10s linear infinite;
+
+}
+
+@keyframes animate {
+
+    0%
+
+    {
+
+        transform:perspective(1000px) rotateX(0deg) rotateY(10deg);
+
+    }
+
+    100%
+
+    {
+
+        transform:perspective(1000px) rotateX(360deg) rotateY(10deg);
+
+    }
+
+}
+
+.box span {
+
+    position:absolute;
+
+    top:0px;
+
+    left:0px;
+
+    height:100%;
+
+    width:100%;
+
+    transform-origin:center;
+
+    transform-style:preserve-3d;
+
+    transform:rotateX(calc(var(--i) * 45deg)) translateZ(300px);
+
+}
+
+.box span img {
+
+    position:absolute;
+
+    top:0px;
+
+    left:0px;
+
+    height:75%;
+
+    width:75%;
+
+    object-fit:cover;
+
+}
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="box">
+
+            <span style="--i:1;"><img src="https://github.com/Yudhveer-Singh/chacha-aunty-marriageaniversary2020/raw/main/img1.png"></span>
+
+            <span style="--i:2;"><img src="https://github.com/Yudhveer-Singh/chacha-aunty-marriageaniversary2020/raw/main/pic1.jpeg"></span>
+
+            <span style="--i:3;"><img src="https://github.com/Yudhveer-Singh/chacha-aunty-marriageaniversary2020/raw/main/img2.png"></span>
+
+            <span style="--i:4;"><img src="https://github.com/Yudhveer-Singh/chacha-aunty-marriageaniversary2020/raw/main/pic2.jpeg"></span>
+
+            <span style="--i:5;"><img src="https://github.com/Yudhveer-Singh/chacha-aunty-marriageaniversary2020/raw/main/img3.png"></span>
+
+            <span style="--i:6;"><img src="https://github.com/Yudhveer-Singh/chacha-aunty-marriageaniversary2020/raw/main/pic3.jpeg"></span>
+
+        </div>
+
+            
+
+        <script>
+
+        alert("from yudhveer");
+
+        </script>
+
+    </body>
+
+</html>
